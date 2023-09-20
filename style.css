@@ -10,6 +10,23 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
+    flex-direction: column;
+}
+
+.githubbtn {
+    margin: 30px auto;
+    background-color: black;
+    padding: 7px 28px;
+    border: none;
+    border-radius: 10px;
+}
+
+.githubbtn a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .conatanier {
@@ -57,8 +74,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-
 }
 
 .box4 {
@@ -71,7 +86,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .conatanier h1 {
@@ -94,7 +108,6 @@ body {
 .active h1 {
     flex: 1;
     opacity: 1;
-
 }
 
 .box {
@@ -103,4 +116,54 @@ body {
 
 .box h1 {
     transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+    .box1 {
+        height: 40vh;
+        border-radius: 10px;
+    }
+
+    .box2 {
+        height: 40vh;
+        border-radius: 10px;
+    }
+
+    .box3 {
+        height: 40vh;
+        border-radius: 10px;
+    }
+
+    .box4 {
+        height: 40vh;
+        border-radius: 10px;
+    }
+
+    .conatanier h1 {
+        position: absolute;
+        bottom: 5px;
+        left: 19px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.736);
+        padding: 3px 12px;
+        border-radius: 50px;
+        opacity: 0;
+        font-size: 14px;
+    }
+
+    .active h1 {
+        flex: 1;
+        opacity: 1;
+    }
+
+    .githubbtn a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
 }
