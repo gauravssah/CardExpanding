@@ -120,7 +120,14 @@ body {
 
 
 @media (min-width: 320px) and (max-width: 480px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        flex-direction: column;
 
+    }
 
     .box1 {
         height: 40vh;
@@ -159,11 +166,15 @@ body {
         opacity: 1;
     }
 
+    .githubbtn {
+        margin: 30px auto;
+        background-color: black;
+        padding: 7px 28px;
+        border: none;
+        border-radius: 10px;
+    }
+
     .githubbtn a {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
         font-size: 17px;
-        font-weight: bold;
-        letter-spacing: 1px;
     }
 }
